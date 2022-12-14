@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+    <style>
+      @font-face {
+        font-family: OpenSans-Regular;
+        font-display: fallback;
+        font-weight: 400;
+        src: local("Open Sans"), local("OpenSans-Regular"), url('/fonts/OpenSans-Regular.woff2') format("woff2"),url('/fonts/OpenSans-Regular.woff') format("woff");
+        unicode-range: U+0400-045f,U+0490-0491,U+04b0-04b1,U+2116;
+      }
+
+      @font-face {
+        font-family: OpenSans-Regular;
+        font-display: fallback;
+        font-weight: 400;
+        src: local("Open Sans"), local("OpenSans-Regular"), url('/fonts/OpenSans-Regular.woff2') format("woff2"), url('/fonts/OpenSans-Regular.woff') format("woff");
+        unicode-range: U+00??,U+0131,U+0152-0153,U+02c6,U+02da,U+02dc,U+2000-206f,U+2074,U+20ac,U+2212,U+2215,U+e0ff,U+effd,U+f000;
+      }
+
+      @font-face {
+        font-family: OpenSans-Regular;
+        font-display: fallback;
+        font-weight: 400;
+        src: local("Open Sans"), local("OpenSans-Regular"), url('/fonts/OpenSans-Regular.woff2') format("woff2"), url('/fonts/OpenSans-Regular.woff') format("woff");
+        unicode-range: U+0100-024f,U+1e??,U+20a0-20ab,U+20ad-20cf,U+2c60-2c7f,U+a720-a7ff;
+      }
+
+      @font-face {
+        font-family: OpenSans-Bold;
+        font-display: fallback;
+        font-weight: 800;
+        src: local("Open Sans Bold"), local("OpenSans-Bold"), url('/fonts/OpenSans-Bold.woff2') format("woff2"),url('/fonts/OpenSans-Bold.woff') format("woff");
+        unicode-range: U+0400-045f,U+0490-0491,U+04b0-04b1,U+2116;
+      }
+
+      @font-face {
+        font-family: OpenSans-Bold;
+        font-display: fallback;
+        font-weight: 800;
+        src: local("Open Sans Bold"), local("OpenSans-Bold"), url('/fonts/OpenSans-Bold.woff2') format("woff2"),url('/fonts/OpenSans-Bold.woff') format("woff");
+        unicode-range: U+00??,U+0131,U+0152-0153,U+02c6,U+02da,U+02dc,U+2000-206f,U+2074,U+20ac,U+2212,U+2215,U+e0ff,U+effd,U+f000;
+      }
+
+      @font-face {
+        font-family: OpenSans-Bold;
+        font-display: fallback;
+        font-weight: 800;
+        src: local("Open Sans Bold"), local("OpenSans-Bold"), url('/fonts/OpenSans-Bold.woff2') format("woff2"), url('/fonts/OpenSans-Bold.woff') format("woff");
+        unicode-range: U+0100-024f,U+1e??,U+20a0-20ab,U+20ad-20cf,U+2c60-2c7f,U+a720-a7ff;
+      }
+
+      @font-face {
+        font-family: OpenSans-SemiBold;
+        font-display: fallback;
+        font-weight: 600;
+        src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"), url('/fonts/OpenSans-SemiBold.woff2') format("woff2"),url('/fonts/OpenSans-SemiBold.woff') format("woff");
+        unicode-range: U+0400-045f,U+0490-0491,U+04b0-04b1,U+2116;
+      }
+
+      @font-face {
+        font-family: OpenSans-SemiBold;
+        font-display: fallback;
+        font-weight: 600;
+        src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"), url('/fonts/OpenSans-SemiBold.woff2') format("woff2"),url('/fonts/OpenSans-SemiBold.woff') format("woff");
+        unicode-range: U+00??,U+0131,U+0152-0153,U+02c6,U+02da,U+02dc,U+2000-206f,U+2074,U+20ac,U+2212,U+2215,U+e0ff,U+effd,U+f000;
+      }
+
+      @font-face {
+        font-family: OpenSans-SemiBold;
+        font-display: fallback;
+        font-weight: 600;
+        src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"), url('/fonts/OpenSans-SemiBold.woff2') format("woff2"), url('/fonts/OpenSans-SemiBold.woff') format("woff");
+        unicode-range: U+0100-024f,U+1e??,U+20a0-20ab,U+20ad-20cf,U+2c60-2c7f,U+a720-a7ff;
+      }
+
+      @font-face {
+        font-family: OpenSans-Italic;
+        font-display: fallback;
+        font-weight: 400;
+        src: local("Open Sans Italic"), local("OpenSans-Italic"), url('/fonts/OpenSans-Italic.woff2') format("woff2"), url('/fonts/OpenSans-Italic.woff') format("woff");
+        unicode-range: U+0400-045f,U+0490-0491,U+04b0-04b1,U+2116;
+      }
+
+      @font-face {
+        font-family: OpenSans-Italic;
+        font-display: fallback;
+        font-weight: 400;
+        src: local("Open Sans Italic"), local("OpenSans-Italic"), url('/fonts/OpenSans-Italic.woff2') format("woff2"),url('/fonts/OpenSans-Italic.woff') format("woff");
+        unicode-range: U+00??,U+0131,U+0152-0153,U+02c6,U+02da,U+02dc,U+2000-206f,U+2074,U+20ac,U+2212,U+2215,U+e0ff,U+effd,U+f000;
+      }
+
+      @font-face {
+        font-family: OpenSans-Italic;
+        font-display: fallback;
+        font-weight: 400;
+        src: local("Open Sans Italic"), local("OpenSans-Italic"), url('/fonts/OpenSans-Italic.woff2') format("woff2"),url('/fonts/OpenSans-Italic.woff') format("woff");
+        unicode-range: U+0100-024f,U+1e??,U+20a0-20ab,U+20ad-20cf,U+2c60-2c7f,U+a720-a7ff;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
