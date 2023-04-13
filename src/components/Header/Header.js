@@ -1,32 +1,42 @@
 import React from 'react';
 import {
-    Button, HeaderContainer, HeaderWrapper, Logo, MenuContainer, MenuItem, Phone, PhoneBlock,
+    ContactWrapper,
+    HeaderContainer, HeaderWrapper, Logo, MenuContainer, MenuItem, Phone, PhoneBlock,
 } from './Header.style';
+import PhoneIcon from '../../theme/svg/phone';
+import MailIcon from '../../theme/svg/mail';
 
 export default function Header() {
     return (
         <HeaderContainer>
-            <HeaderWrapper>
-                <PhoneBlock>
-                    <Phone href='tel:380634164341'>
-                        380634164341
-                    </Phone>
-                    <Phone href='tel:380634164341'>
-                        380634164341
-                    </Phone>
-                    <Phone href='tel:380634164341'>
-                        380634164341
-                    </Phone>
-                </PhoneBlock>
-                <PhoneBlock>
-                    <Phone href='mailto:google@com'>
-                        google@com
-                    </Phone>
-                    <Button onClick={() => { console.log('action'); }}>
-                        Запис на прийом
-                    </Button>
-                </PhoneBlock>
-            </HeaderWrapper>
+            <ContactWrapper>
+                <HeaderWrapper>
+                    <PhoneBlock>
+                        <PhoneIcon
+                            height={20}
+                            width={20}
+                        />
+                        <Phone href='tel:380634164341'>
+                            380634164341
+                        </Phone>
+                        <Phone href='tel:380634164341'>
+                            380634164341
+                        </Phone>
+                        <Phone href='tel:380634164341'>
+                            380634164341
+                        </Phone>
+                    </PhoneBlock>
+                    <PhoneBlock>
+                        <MailIcon
+                            height={20}
+                            width={20}
+                        />
+                        <Phone href='mailto:google@com'>
+                            google@com
+                        </Phone>
+                    </PhoneBlock>
+                </HeaderWrapper>
+            </ContactWrapper>
             <HeaderWrapper>
                 <Logo />
                 <MenuContainer>

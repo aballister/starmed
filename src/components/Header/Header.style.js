@@ -17,6 +17,14 @@ export const HeaderWrapper = styled.div`
     padding: 0 15px;
 `;
 
+export const ContactWrapper = styled.div`
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid ${props => props.theme.colors.lightGrey};
+`;
+
 export const Logo = styled.div`
     width: 200px;
     height: 100px;
@@ -31,7 +39,13 @@ export const PhoneBlock = styled.div`
 `;
 
 export const Phone = styled.a`
-    color: blue;
+    color: ${props => props.theme.colors.primary};
+    margin-left: 10px;
+    @media (hover: hover) {
+        &:hover {
+            color: ${props => props.theme.colors.lightBlue};
+        }
+    }
 `;
 
 export const MenuContainer = styled.div`
@@ -41,11 +55,11 @@ export const MenuContainer = styled.div`
 `;
 
 export const MenuItem = styled.a`
-    color: black;
-`;
-
-export const Button = styled.button`
-    width: 100px;
-    height: 50px;
-    background: blue;
+    color: ${props => props.theme.colors.primary};
+    margin-left: 20px;
+    @media (hover: hover) {
+        &:hover {
+            color: ${props => props.theme.colors.lightBlue};
+        }
+    }
 `;

@@ -7,7 +7,8 @@ export default {
     },
     colors: {
         primary: '#374250',
-        hoverColor: 'blue',
+        lightBlue: '#39c',
+        lightGrey: '#e1e7ec',
         white: '#fff',
     },
     shadows: {
