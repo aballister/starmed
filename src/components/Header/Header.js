@@ -1,7 +1,9 @@
 import React from 'react';
 import {
     ContactWrapper,
-    HeaderContainer, HeaderWrapper, Logo, MenuContainer, MenuItem, Phone, PhoneBlock,
+    HeaderContainer, HeaderWrapper, Logo, MenuContainer, MenuItem,
+    MenuItemLink, MenuItemSpan, MenuWrapper, Phone,
+    PhoneBlock,
 } from './Header.style';
 import PhoneIcon from '../../theme/svg/phone';
 import MailIcon from '../../theme/svg/mail';
@@ -37,26 +39,48 @@ export default function Header() {
                     </PhoneBlock>
                 </HeaderWrapper>
             </ContactWrapper>
-            <HeaderWrapper>
-                <Logo />
-                <MenuContainer>
-                    <MenuItem href='#1'>
-                        Головна
-                    </MenuItem>
-                    <MenuItem href='#2'>
-                        Про клініку
-                    </MenuItem>
-                    <MenuItem href='#3'>
-                        Послуги
-                    </MenuItem>
-                    <MenuItem href='#4'>
-                        Ціни
-                    </MenuItem>
-                    <MenuItem href='#5'>
-                        Контакти
-                    </MenuItem>
-                </MenuContainer>
-            </HeaderWrapper>
+            <MenuWrapper>
+                <HeaderWrapper>
+                    <Logo />
+                    <MenuContainer>
+                        <MenuItem>
+                            <MenuItemLink href='#1'>
+                                <MenuItemSpan>
+                                    Головна
+                                </MenuItemSpan>
+                            </MenuItemLink>
+                        </MenuItem>
+                        <MenuItem>
+                            <MenuItemLink href='#2'>
+                                <MenuItemSpan>
+                                    Послуги
+                                </MenuItemSpan>
+                            </MenuItemLink>
+                        </MenuItem>
+                        <MenuItem>
+                            <MenuItemLink href='#3'>
+                                <MenuItemSpan>
+                                    Відділення
+                                </MenuItemSpan>
+                            </MenuItemLink>
+                        </MenuItem>
+                        <MenuItem>
+                            <MenuItemLink href='#4'>
+                                <MenuItemSpan>
+                                    Лікарі
+                                </MenuItemSpan>
+                            </MenuItemLink>
+                        </MenuItem>
+                        <MenuItem>
+                            <MenuItemLink href='#5'>
+                                <MenuItemSpan>
+                                    Контакти
+                                </MenuItemSpan>
+                            </MenuItemLink>
+                        </MenuItem>
+                    </MenuContainer>
+                </HeaderWrapper>
+            </MenuWrapper>
         </HeaderContainer>
     );
 }
