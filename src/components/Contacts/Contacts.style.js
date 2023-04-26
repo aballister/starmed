@@ -38,10 +38,19 @@ export const ContactText = styled.p`
 `;
 
 export const ContactsMap = styled.div`
-    flex: 1;
-    
-    iframe {
-        width: 100%;
+    position: relative;
+    .leaflet-container {
         height: 400px;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: ${props => props.theme.colors.lightGrey};
+        opacity: 0.2;
+        pointer-events: none;
     }
 `;

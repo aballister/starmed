@@ -27,7 +27,7 @@ export const DepartmentsLeft = styled.div`
 
 export const DepartmentsRight = styled.div`
     flex: 1;
-    padding: 30px 30px 30px 0;    
+    padding: 30px;    
 `;
 
 export const DepartmentBlocks = styled.div`
@@ -41,11 +41,14 @@ export const DepartmentBlock = styled.div`
     margin-top: 20px;
 `;
 
-export const DepartmentIcon = styled.div`
+export const DepartmentIcon = styled.img`
     width: 50px;
     height: 50px;
-    background: yellow;
-    border-radius: 100%;
+`;
+
+export const DepartmentInfo = styled.div`
+    padding-top: 8px;
+    padding-left: 8px;
 `;
 export const DepartmentName = styled.p`
     font-size: 16px;

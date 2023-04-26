@@ -1,7 +1,7 @@
 import React from 'react';
 import {
     DepartmentBlock,
-    DepartmentBlocks, DepartmentIcon,
+    DepartmentBlocks, DepartmentIcon, DepartmentInfo,
     DepartmentName,
     DepartmentsContainer,
     DepartmentsLeft,
@@ -18,34 +18,84 @@ export default function Departments() {
                 <DepartmentsRight>
                     <DepartmentBlocks>
                         <DepartmentBlock>
-                            <DepartmentIcon />
-                            <DepartmentName>Сімейний лікар</DepartmentName>
-                            <DepartmentText>бла бла бла</DepartmentText>
+                            <DepartmentIcon
+                                alt='Сімейна медицина'
+                                src='images/doctor.png'
+                            />
+                            <DepartmentInfo>
+                                <DepartmentName>Сімейна медицина</DepartmentName>
+                                <DepartmentText>бла бла бла</DepartmentText>
+                            </DepartmentInfo>
                         </DepartmentBlock>
                         <DepartmentBlock>
-                            <DepartmentIcon />
-                            <DepartmentName>Терапевт</DepartmentName>
-                            <DepartmentText>бла бла бла</DepartmentText>
+                            <DepartmentIcon
+                                alt='Терапія'
+                                src='images/stethoscope.png'
+                            />
+                            <DepartmentInfo>
+                                <DepartmentName>Терапія</DepartmentName>
+                                <DepartmentText>бла бла бла</DepartmentText>
+                            </DepartmentInfo>
                         </DepartmentBlock>
                         <DepartmentBlock>
-                            <DepartmentIcon />
-                            <DepartmentName>Кардіолог</DepartmentName>
-                            <DepartmentText>бла бла бла</DepartmentText>
+                            <DepartmentIcon
+                                alt='Кардіологія'
+                                src='images/cardiology.png'
+                            />
+                            <DepartmentInfo>
+                                <DepartmentName>Кардіологія</DepartmentName>
+                                <DepartmentText>бла бла бла</DepartmentText>
+                            </DepartmentInfo>
                         </DepartmentBlock>
                         <DepartmentBlock>
-                            <DepartmentIcon />
-                            <DepartmentName>Уролог</DepartmentName>
-                            <DepartmentText>бла бла бла</DepartmentText>
+                            <DepartmentIcon
+                                alt='Урологія'
+                                src='images/urology.png'
+                            />
+                            <DepartmentInfo>
+                                <DepartmentName>Урологія</DepartmentName>
+                                <DepartmentText>бла бла бла</DepartmentText>
+                            </DepartmentInfo>
                         </DepartmentBlock>
                         <DepartmentBlock>
-                            <DepartmentIcon />
-                            <DepartmentName>Травматолог</DepartmentName>
-                            <DepartmentText>бла бла бла</DepartmentText>
+                            <DepartmentIcon
+                                alt='Травматологія'
+                                src='images/injury.png'
+                            />
+                            <DepartmentInfo>
+                                <DepartmentName>Травматологія</DepartmentName>
+                                <DepartmentText>бла бла бла</DepartmentText>
+                            </DepartmentInfo>
                         </DepartmentBlock>
                         <DepartmentBlock>
-                            <DepartmentIcon />
-                            <DepartmentName>Невролог</DepartmentName>
-                            <DepartmentText>бла бла бла</DepartmentText>
+                            <DepartmentIcon
+                                alt='Неврологія'
+                                src='images/brain.png'
+                            />
+                            <DepartmentInfo>
+                                <DepartmentName>Неврологія</DepartmentName>
+                                <DepartmentText>бла бла бла</DepartmentText>
+                            </DepartmentInfo>
+                        </DepartmentBlock>
+                        <DepartmentBlock>
+                            <DepartmentIcon
+                                alt='Гінекологія'
+                                src='images/gynecology1.png'
+                            />
+                            <DepartmentInfo>
+                                <DepartmentName>Гінекологія</DepartmentName>
+                                <DepartmentText>бла бла бла</DepartmentText>
+                            </DepartmentInfo>
+                        </DepartmentBlock>
+                        <DepartmentBlock>
+                            <DepartmentIcon
+                                alt='Масаж'
+                                src='images/massage.png'
+                            />
+                            <DepartmentInfo>
+                                <DepartmentName>Масаж</DepartmentName>
+                                <DepartmentText>бла бла бла</DepartmentText>
+                            </DepartmentInfo>
                         </DepartmentBlock>
                     </DepartmentBlocks>
                 </DepartmentsRight>

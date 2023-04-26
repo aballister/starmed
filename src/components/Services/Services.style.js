@@ -42,11 +42,9 @@ export const ServiceBlock = styled.div`
     margin-top: 20px;
 `;
 
-export const ServiceIcon = styled.div`
+export const ServiceIcon = styled.img`
     width: 50px;
     height: 50px;
-    background: yellow;
-    border-radius: 100%;
 `;
 
 export const ServiceInfo = styled.div`

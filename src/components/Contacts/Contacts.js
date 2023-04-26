@@ -1,5 +1,10 @@
 import React from 'react';
 import {
+    MapContainer, Marker, Popup, TileLayer,
+} from 'react-leaflet';
+import 'leaflet/dist/images/marker-icon-2x.png';
+
+import {
     Contact,
     ContactsContainer,
     ContactsLeft, ContactsMap,
@@ -8,6 +13,8 @@ import {
     ContactText,
     ContactTitle,
 } from './Contacts.style';
+
+const position = [50.44237788181851, 30.429111096230514];
 
 export default function Contacts() {
     return (
@@ -54,13 +61,42 @@ export default function Contacts() {
                 </ContactsRight>
             </ContactsWrapper>
             <ContactsMap>
-                <iframe
-                    allowFullScreen=''
-                    loading='lazy'
-                    referrerPolicy='no-referrer-when-downgrade'
-                    src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9182587382998!2d30.429789500000005!3d50.44262320000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc1765193815%3A0x29c7ce800721c50e!2z0LLRg9C70LjRhtGPINCT0LDRgNC80LDRgtC90LAsIDM40JAsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1682167033022!5m2!1suk!2sua'
-                    title='starkyivmed'
-                />
+                <MapContainer
+                    center={position}
+                    scrollWheelZoom={false}
+                    zoom={13}
+                >
+                    <TileLayer
+                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                        url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+                    />
+                    <Marker position={position}>
+                        <Popup>
+                            <div>
+                                <img
+                                    alt=''
+                                    height={20}
+                                    src='images/location.png'
+                                />
+                                Гарматна 38а
+                            </div>
+                            <div>
+                                <img
+                                    alt=''
+                                    height={20}
+                                    src='images/smartphone.png'
+                                />
+                                <div>
+                                    380634164341
+                                    <br />
+                                    380634164341
+                                    <br />
+                                    380634164341
+                                </div>
+                            </div>
+                        </Popup>
+                    </Marker>
+                </MapContainer>
             </ContactsMap>
         </ContactsContainer>
     );

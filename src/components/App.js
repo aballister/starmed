@@ -7,6 +7,7 @@ import Contacts from './Contacts/Contacts';
 import PictureSecond from './PictureSecond/PictureSecond';
 import Departments from './Departments/Departments';
 import Doctors from './Doctors/Doctors';
+import Footer from './Footer/Footer';
 
 export default function App() {
     return (
@@ -18,6 +19,7 @@ export default function App() {
             <Departments />
             <Doctors />
             <Contacts />
+            <Footer />
         </Container>
     );
 }

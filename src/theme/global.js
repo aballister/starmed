@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import normalize from './normalize';
+import leafletBase from './leaflet';
 
 const breakpoints = {
     superSmall: 359,
@@ -18,6 +19,7 @@ export const mediaQuery = (breakpoint, type = 'less') => {
 };
 export const GlobalStyle = createGlobalStyle`
     ${normalize}
+    ${leafletBase}
     
     html,
     body {

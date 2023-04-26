@@ -18,24 +18,33 @@ export default function Services() {
                     <h2>Наші послуги</h2>
                     <ServiceBlocks>
                         <ServiceBlock>
-                            <ServiceIcon />
+                            <ServiceIcon
+                                alt='Виклики на дім'
+                                src='images/stethoscope1.png'
+                            />
                             <ServiceInfo>
                                 <ServiceName>Виклики на дім</ServiceName>
                                 <ServiceText>Виклик лікаря на дім</ServiceText>
                             </ServiceInfo>
                         </ServiceBlock>
                         <ServiceBlock>
-                            <ServiceIcon />
+                            <ServiceIcon
+                                alt='Консультації в клініці'
+                                src='images/home.png'
+                            />
                             <ServiceInfo>
-                                <ServiceName>Виклики на дім</ServiceName>
-                                <ServiceText>Виклик лікаря на дім</ServiceText>
+                                <ServiceName>Консультації в клініці</ServiceName>
+                                <ServiceText>Консультації в клініці</ServiceText>
                             </ServiceInfo>
                         </ServiceBlock>
                         <ServiceBlock>
-                            <ServiceIcon />
+                            <ServiceIcon
+                                alt='Онлайн консультації'
+                                src='images/phone-call.png'
+                            />
                             <ServiceInfo>
-                                <ServiceName>Виклики на дім</ServiceName>
-                                <ServiceText>Виклик лікаря на дім</ServiceText>
+                                <ServiceName>Онлайн консультації</ServiceName>
+                                <ServiceText>Консультації лікаря по телефону</ServiceText>
                             </ServiceInfo>
                         </ServiceBlock>
                         <ServiceBlock>
