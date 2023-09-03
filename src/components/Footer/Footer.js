@@ -5,7 +5,9 @@ export default function Footer() {
     return (
         <FooterContainer>
             <FooterWrapper>
-                <Copyright>Правова інформація: © 2022-2023 StarMed</Copyright>
+                <Copyright>
+                    {`«Старкиївмед» 2021-${new Date().getFullYear()}. Всі права захищені.`}
+                </Copyright>
             </FooterWrapper>
         </FooterContainer>
     );

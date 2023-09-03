@@ -7,15 +7,15 @@ import {
     DepartmentsLeft,
     DepartmentsRight,
     DepartmentsWrapper,
-    DepartmentText,
 } from './Departments.style';
 
 export default function Departments() {
     return (
-        <DepartmentsContainer>
+        <DepartmentsContainer id='departments'>
             <DepartmentsWrapper>
                 <DepartmentsLeft />
                 <DepartmentsRight>
+                    <h2>Наші напрямки</h2>
                     <DepartmentBlocks>
                         <DepartmentBlock>
                             <DepartmentIcon
@@ -24,7 +24,6 @@ export default function Departments() {
                             />
                             <DepartmentInfo>
                                 <DepartmentName>Сімейна медицина</DepartmentName>
-                                <DepartmentText>бла бла бла</DepartmentText>
                             </DepartmentInfo>
                         </DepartmentBlock>
                         <DepartmentBlock>
@@ -34,7 +33,6 @@ export default function Departments() {
                             />
                             <DepartmentInfo>
                                 <DepartmentName>Терапія</DepartmentName>
-                                <DepartmentText>бла бла бла</DepartmentText>
                             </DepartmentInfo>
                         </DepartmentBlock>
                         <DepartmentBlock>
@@ -44,7 +42,6 @@ export default function Departments() {
                             />
                             <DepartmentInfo>
                                 <DepartmentName>Кардіологія</DepartmentName>
-                                <DepartmentText>бла бла бла</DepartmentText>
                             </DepartmentInfo>
                         </DepartmentBlock>
                         <DepartmentBlock>
@@ -54,7 +51,6 @@ export default function Departments() {
                             />
                             <DepartmentInfo>
                                 <DepartmentName>Урологія</DepartmentName>
-                                <DepartmentText>бла бла бла</DepartmentText>
                             </DepartmentInfo>
                         </DepartmentBlock>
                         <DepartmentBlock>
@@ -64,7 +60,6 @@ export default function Departments() {
                             />
                             <DepartmentInfo>
                                 <DepartmentName>Травматологія</DepartmentName>
-                                <DepartmentText>бла бла бла</DepartmentText>
                             </DepartmentInfo>
                         </DepartmentBlock>
                         <DepartmentBlock>
@@ -74,7 +69,6 @@ export default function Departments() {
                             />
                             <DepartmentInfo>
                                 <DepartmentName>Неврологія</DepartmentName>
-                                <DepartmentText>бла бла бла</DepartmentText>
                             </DepartmentInfo>
                         </DepartmentBlock>
                         <DepartmentBlock>
@@ -84,7 +78,6 @@ export default function Departments() {
                             />
                             <DepartmentInfo>
                                 <DepartmentName>Гінекологія</DepartmentName>
-                                <DepartmentText>бла бла бла</DepartmentText>
                             </DepartmentInfo>
                         </DepartmentBlock>
                         <DepartmentBlock>
@@ -93,8 +86,7 @@ export default function Departments() {
                                 src='images/massage.png'
                             />
                             <DepartmentInfo>
-                                <DepartmentName>Масаж</DepartmentName>
-                                <DepartmentText>бла бла бла</DepartmentText>
+                                <DepartmentName>Масажі</DepartmentName>
                             </DepartmentInfo>
                         </DepartmentBlock>
                     </DepartmentBlocks>

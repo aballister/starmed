@@ -15,10 +15,30 @@ export default function Doctors() {
             spacing: 30,
         },
         loop: true,
+        breakpoints: {
+            '(max-width: 900px)': {
+                slides: {
+                    perView: 3,
+                    spacing: 20,
+                },
+            },
+            '(max-width: 576px)': {
+                slides: {
+                    perView: 2,
+                    spacing: 20,
+                },
+            },
+            '(max-width: 400px)': {
+                slides: {
+                    perView: 1,
+                    spacing: 20,
+                },
+            },
+        },
     });
 
     return (
-        <DoctorsContainer>
+        <DoctorsContainer id='doctors'>
             <DoctorsWrapper>
                 <h2>
                     Наші лікарі

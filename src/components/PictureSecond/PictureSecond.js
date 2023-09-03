@@ -5,8 +5,8 @@ export default function PictureSecond() {
     return (
         <PictureSecondContainer>
             <PictureSecondWrapper>
-                <h3>Ваше здоров&apos;я - наша найбільша цінність</h3>
-                <p>Ваше здоров&apos;я - наша найбільша цінність</p>
+                <h3>Ваше здоров&apos;я - наша найбільша&nbsp;цінність</h3>
+                <p>Обирайте нас, якщо вам важлива якість</p>
             </PictureSecondWrapper>
         </PictureSecondContainer>
     );

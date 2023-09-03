@@ -2,17 +2,17 @@ import React from 'react';
 import {
     ServiceBlock,
     ServiceBlocks, ServiceIcon, ServiceInfo,
-    ServiceName,
     ServicesContainer,
     ServicesLeft,
     ServicesRight,
     ServicesWrapper,
     ServiceText,
 } from './Services.style';
+import Form from '../Form/Form';
 
 export default function Services() {
     return (
-        <ServicesContainer>
+        <ServicesContainer id='services'>
             <ServicesWrapper>
                 <ServicesLeft>
                     <h2>Наші послуги</h2>
@@ -23,8 +23,7 @@ export default function Services() {
                                 src='images/stethoscope1.png'
                             />
                             <ServiceInfo>
-                                <ServiceName>Виклики на дім</ServiceName>
-                                <ServiceText>Виклик лікаря на дім</ServiceText>
+                                <ServiceText>Виклик лікаря на&nbsp;дім</ServiceText>
                             </ServiceInfo>
                         </ServiceBlock>
                         <ServiceBlock>
@@ -33,8 +32,7 @@ export default function Services() {
                                 src='images/home.png'
                             />
                             <ServiceInfo>
-                                <ServiceName>Консультації в клініці</ServiceName>
-                                <ServiceText>Консультації в клініці</ServiceText>
+                                <ServiceText>Консультації в&nbsp;клініці</ServiceText>
                             </ServiceInfo>
                         </ServiceBlock>
                         <ServiceBlock>
@@ -43,21 +41,22 @@ export default function Services() {
                                 src='images/phone-call.png'
                             />
                             <ServiceInfo>
-                                <ServiceName>Онлайн консультації</ServiceName>
-                                <ServiceText>Консультації лікаря по телефону</ServiceText>
+                                <ServiceText>Консультації лікаря по&nbsp;телефону</ServiceText>
                             </ServiceInfo>
                         </ServiceBlock>
                         <ServiceBlock>
-                            <ServiceIcon />
+                            <ServiceIcon
+                                alt='Масажі'
+                                src='images/ll.png'
+                            />
                             <ServiceInfo>
-                                <ServiceName>Виклики на дім</ServiceName>
-                                <ServiceText>Виклик лікаря на дім</ServiceText>
+                                <ServiceText>Листки непрацездатності</ServiceText>
                             </ServiceInfo>
                         </ServiceBlock>
                     </ServiceBlocks>
                 </ServicesLeft>
                 <ServicesRight>
-                    Форма
+                    <Form />
                 </ServicesRight>
             </ServicesWrapper>
         </ServicesContainer>

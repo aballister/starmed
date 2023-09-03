@@ -7,57 +7,105 @@ import 'leaflet/dist/images/marker-icon-2x.png';
 import {
     Contact,
     ContactsContainer,
-    ContactsLeft, ContactsMap,
+    ContactsLeft, ContactsMap, ContactsPhones, ContactsPhonesBlock,
     ContactsRight,
     ContactsWrapper,
     ContactText,
     ContactTitle,
 } from './Contacts.style';
+import Form from '../Form/Form';
+import PhoneIcon from '../../theme/svg/phone';
+import MailIcon from '../../theme/svg/mail';
+import LocationIcon from '../../theme/svg/location';
+import ScheduleIcon from '../../theme/svg/schedule';
 
 const position = [50.44237788181851, 30.429111096230514];
 
 export default function Contacts() {
     return (
-        <ContactsContainer>
+        <ContactsContainer id='contacts'>
             <ContactsWrapper>
                 <ContactsLeft>
                     <h2>Контакти</h2>
-                    Форма
-                </ContactsLeft>
-                <ContactsRight>
                     <Contact>
                         <ContactTitle>
                             Наша адреса
                         </ContactTitle>
-                        <ContactText>
-                            м.Київ, вул. Гарматна 38а
-                        </ContactText>
+                        <ContactsPhones>
+                            <LocationIcon
+                                height={20}
+                                width={20}
+                            />
+                            <ContactsPhonesBlock>
+                                <ContactText>
+                                    <a
+                                        href='https://maps.google.com/?q=50.44247213156252, 30.429201298174576'
+                                        target='_blank'
+                                    >
+                                        м.Київ, вул. Гарматна 38а
+                                    </a>
+                                </ContactText>
+                            </ContactsPhonesBlock>
+                        </ContactsPhones>
                     </Contact>
                     <Contact>
                         <ContactTitle>
                             Звʼяжіться з нами
                         </ContactTitle>
-                        <ContactText>
-                            380634164341
-                        </ContactText>
-                        <ContactText>
-                            starkyivmed@info.com
-                        </ContactText>
+                        <ContactsPhones>
+                            <PhoneIcon
+                                height={20}
+                                width={20}
+                            />
+                            <ContactsPhonesBlock>
+                                <ContactText>
+                                    <a href='tel:380664088106'>380 (66) 408-81-06</a>
+                                </ContactText>
+                                <ContactText>
+                                    <a href='tel:380634088108'>380 (63) 408-81-08</a>
+                                </ContactText>
+                                <ContactText>
+                                    <a href='tel:380673129062'>380 (67) 312-90-62</a>
+                                </ContactText>
+                            </ContactsPhonesBlock>
+                        </ContactsPhones>
+                        <ContactsPhones>
+                            <MailIcon
+                                height={20}
+                                width={20}
+                            />
+                            <ContactsPhonesBlock>
+                                <ContactText>
+                                    <a href='mailto:aid@skm.clinic'>aid@skm.clinic</a>
+                                </ContactText>
+                            </ContactsPhonesBlock>
+                        </ContactsPhones>
                     </Contact>
                     <Contact>
                         <ContactTitle>
                             Розклад роботи
                         </ContactTitle>
-                        <ContactText>
-                            Понеділок-пятниця 08:00-20:00
-                        </ContactText>
-                        <ContactText>
-                            Субота 10:00-18:00
-                        </ContactText>
-                        <ContactText>
-                            Неділя - вихідний
-                        </ContactText>
+                        <ContactsPhones>
+                            <ScheduleIcon
+                                height={20}
+                                width={20}
+                            />
+                            <ContactsPhonesBlock>
+                                <ContactText>
+                                    Понеділок-пʼятниця 08:00-20:00
+                                </ContactText>
+                                <ContactText>
+                                    Субота 10:00-18:00
+                                </ContactText>
+                                <ContactText>
+                                    Неділя - вихідний
+                                </ContactText>
+                            </ContactsPhonesBlock>
+                        </ContactsPhones>
                     </Contact>
+                </ContactsLeft>
+                <ContactsRight>
+                    <Form />
                 </ContactsRight>
             </ContactsWrapper>
             <ContactsMap>
