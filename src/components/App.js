@@ -6,12 +6,11 @@ import Services from './Services/Services';
 import Contacts from './Contacts/Contacts';
 import PictureSecond from './PictureSecond/PictureSecond';
 import Departments from './Departments/Departments';
-import Doctors from './Doctors/Doctors';
 import Footer from './Footer/Footer';
 
 export default function App() {
     const [isFixed, setIsFixed] = useState(false);
-    console.log(isFixed);
+
     return (
         <Container isFixed={isFixed}>
             <Header
@@ -22,7 +21,6 @@ export default function App() {
             <Services />
             <PictureSecond />
             <Departments />
-            <Doctors />
             <Contacts />
             <Footer />
         </Container>

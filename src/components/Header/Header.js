@@ -37,10 +37,8 @@ export default function Header({ setIsFixed, isFixed }) {
     useEffect(() => {
         setFixed(window.innerWidth > 576 ? offset > 30 : true);
         const headerOffset = document.getElementById('menu').offsetHeight;
-        if (offset >= document.getElementById('contacts').offsetTop - document.getElementById('doctors').getBoundingClientRect().height / 2 - headerOffset) {
+        if (offset >= document.getElementById('contacts').offsetTop - document.getElementById('departments').getBoundingClientRect().height / 2 - headerOffset) {
             setActiveMenu('contacts');
-        } else if (offset >= document.getElementById('doctors').offsetTop - document.getElementById('departments').getBoundingClientRect().height / 2 - headerOffset) {
-            setActiveMenu('doctors');
         } else if (offset >= document.getElementById('departments').offsetTop - document.getElementById('services').getBoundingClientRect().height / 2 - headerOffset) {
             setActiveMenu('departments');
         } else if (offset >= document.getElementById('services').offsetTop - document.getElementById('home').getBoundingClientRect().height / 2 - headerOffset) {
@@ -130,17 +128,6 @@ export default function Header({ setIsFixed, isFixed }) {
                                 >
                                     <MenuItemSpan isActive={activeMenu === 'departments'}>
                                         Напрямки
-                                    </MenuItemSpan>
-                                </MenuItemLink>
-                            </MenuItem>
-                            <MenuItem>
-                                <MenuItemLink onClick={() => {
-                                    setIsFixed(false);
-                                    scrollToBlock('doctors');
-                                }}
-                                >
-                                    <MenuItemSpan isActive={activeMenu === 'doctors'}>
-                                        Лікарі
                                     </MenuItemSpan>
                                 </MenuItemLink>
                             </MenuItem>
